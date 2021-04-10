@@ -1,40 +1,56 @@
-import React from 'react'
+import React, { useState } from "react";
 import {Modal, Container, Row, Col, } from 'react-bootstrap'
 import styles from '../Modals.module.css'
-
+import Anima from '../../images/Anima.svg'
+import SignupForm from './SignupForm'
+import LoginCard from './LoginCard'
 
 const SignUpPage = () => {
-    return (
-        <Modal.Body className="show-grid">
-        <Container>
-          <Row>
-            <Col xs={2} md={4}>
-            </Col>
-            <Col xs={8} md={4}>
-              <div className={styles.red}>anime</div>
-            </Col>
-            <Col xs={2} md={4}>
-            </Col>
-          </Row>
-          <Row>
-              <Col xs={12} md={6}>
-                  <Row>
-                      <Col xs={12} md={6}>google</Col>
-                      <Col xs={12} md={6}>facebook</Col>
-                  </Row>
-                  <Row>
-                      <Col xs={12} md={6}>dribble</Col>
-                      <Col xs={12} md={6}>behance</Col>
-                  </Row>
-    
-              </Col>
-              <Col xs={12} md={6}>
-                  signup
-              </Col>
-    
-          </Row>
-        </Container>
-      </Modal.Body>  );
-}
+  return (
+    <div className={styles.modal}>
+    <Modal.Body className="show-grid">
+    <Container>
+      <div className="d-flex justify-content-center">
+      <div className={styles.center}>
+                  <img src={Anima} alt="anima"/>
+          </div>
+          <div className={styles.anima}>Anima</div>
 
-export default SignUpPage
+      </div>
+   
+       <div className={styles.p}>
+         <p>already have an account? login</p>
+       </div>
+      {/* modal head end*/}
+
+      <Row>
+          <Col xs={12} md={6}>
+            <LoginCard/>
+          </Col>
+
+{/* virticle line */}
+
+          <Col xs={0} md={1}>
+            <div>
+                <div className={styles.verticle}></div>
+                 <p>or</p>
+                 <div className={styles.verticle}></div>
+            </div>    
+          </Col>
+
+{/* signup form */}
+
+          <Col xs={12} md={5}>
+            <div className="d-inline p-2 ">
+            <SignupForm/>
+            </div>
+          </Col>
+
+      </Row>
+    </Container>
+  </Modal.Body>
+  </div>  
+  );
+};
+
+export default SignUpPage;

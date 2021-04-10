@@ -1,3 +1,157 @@
-.red{
-    color:red
-  }
+.modal {
+  background: #ffffff;
+  /* border-style: ridge; */
+  border-color: #1781ff;
+}
+
+
+
+.anima {
+  font-family: Poppins;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+  color: #1781ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+.anima_logo {
+  position: absolute;
+}
+
+.p {
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 190.4%;
+  color: #949494;
+  padding: 20px 0px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google{
+  position: absolute;
+width: 184px;
+height: 184px;
+left: 311px;
+top: 542px;
+
+background: #FFFFFF;
+/* 55 */
+
+box-shadow: 5px 0px 11px 6px rgba(205, 205, 205, 0.24);
+border-radius: 3px;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  
+}
+
+
+.vertical {
+  border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  /* border-left: 6px solid black;
+  height: 200px;
+  position:absolute;
+  left: 5%; */}
+
+
+.card_div{
+  padding: 20px 10px;
+}
+
+.card_google{
+  background: #FFFFFF;
+  box-shadow: 5px 0px 11px 6px rgba(205, 205, 205, 0.24);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_facebook{
+  background: #4A7AFF;
+  box-shadow: 5px 0px 11px 6px rgba(205, 205, 205, 0.14);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card_dribble{
+  background: #FE65AC;
+  box-shadow: 5px 0px 11px 6px rgba(205, 205, 205, 0.14);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card_behance{
+  background: #0053BF;
+  box-shadow: 5px 0px 11px 6px rgba(205, 205, 205, 0.14);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_typography{
+  padding-top: 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  /* identical to box height, or 133% */
+    color: #FFFFFF;
+}
+.card_typography_google{
+  padding-top: 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  /* identical to box height, or 133% */
+    color: #4A4A4A;
+}
+
+
+
+
+.card_logo_svg{
+  margin: 0 auto
+  /* height: 84px;
+width: 84px;
+left: 0px;
+top: 0px;
+border-radius: 50px; */
+}
+
+
+
