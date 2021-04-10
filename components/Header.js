@@ -42,13 +42,13 @@ const Header = () => {
       {loginPage ? (
         <div>
           <Modal show={show} onHide={handleClose} size="lg">
-            <LoginPage/>
+            <LoginPage signup={signupPageHandler}/>
           </Modal>
         </div>
       ) : signupPage ? (
         <div>
           <Modal show={show} onHide={handleClose} size="lg">
-            <SignUpPage/>
+            <SignUpPage login={loginPageHandler}/>
           </Modal>
 
         </div>

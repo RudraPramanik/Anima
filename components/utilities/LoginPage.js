@@ -1,35 +1,25 @@
 import React, { useState } from "react";
-import {Modal, Container, Row, Col, } from 'react-bootstrap'
+import {Modal, Container, Row, Col, Button } from 'react-bootstrap'
 import styles from '../Modals.module.css'
 import Anima from '../../images/Anima.svg'
 import LoginForm from './LoginForm'
 import LoginCard from './LoginCard'
 
-const LoginPage = () => {
+const LoginPage = ({signup}) => {
   return (
     <div className={styles.modal}>
     <Modal.Body className="show-grid">
     <Container>
-      <Row>
-        <Col xs={2} md={3}>
-        </Col>
-        <Col xs={8} md={6}>
-          <Row>
-            <Col xs={0} md={5}>
-                <div className={styles.center}>
+    <div className="d-flex justify-content-center">
+      <div className={styles.center}>
                   <img src={Anima} alt="anima"/>
-                </div>
-            </Col>
-            <Col xs={7} md={7}>
-                <div className={styles.anima}>Anima</div>
-            </Col>
-          </Row>
-        </Col>
-        <Col xs={2} md={3}>
-        </Col>
-      </Row>
+          </div>
+          <div className={styles.anima}>Anima</div>
+
+      </div>
+
        <div className={styles.p}>
-         <p>already have an account? login</p>
+         <p>Don't have an account? <Button onClick={signup} variant="link">SignUp</Button></p>
        </div>
       {/* modal head end*/}
 
@@ -40,9 +30,9 @@ const LoginPage = () => {
 
           <Col xs={0} md={1}>
             <div>
-                <div className={styles.verticle}></div>
-                 <p>or</p>
-                 <div className={styles.verticle}></div>
+            <span className="vertical-line"></span>
+            <p>or</p>
+            <span class="vertical-line"></span>
             </div>    
           </Col>
 

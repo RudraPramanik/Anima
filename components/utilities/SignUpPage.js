@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import {Modal, Container, Row, Col, } from 'react-bootstrap'
+import {Modal, Container, Row, Col, Button } from 'react-bootstrap'
 import styles from '../Modals.module.css'
 import Anima from '../../images/Anima.svg'
 import SignupForm from './SignupForm'
 import LoginCard from './LoginCard'
 
-const SignUpPage = () => {
+const SignUpPage = ({login}) => {
   return (
     <div className={styles.modal}>
     <Modal.Body className="show-grid">
@@ -19,7 +19,7 @@ const SignUpPage = () => {
       </div>
    
        <div className={styles.p}>
-         <p>already have an account? login</p>
+         <p>already have an account? <Button onClick={login} variant="link">Login</Button></p>
        </div>
       {/* modal head end*/}
 
@@ -30,14 +30,11 @@ const SignUpPage = () => {
 
 {/* virticle line */}
 
-          <Col xs={0} md={1}>
-            <div>
+          <Col xs={1} md={1}>        
                 <div className={styles.verticle}></div>
                  <p>or</p>
-                 <div className={styles.verticle}></div>
-            </div>    
+                 <div className={styles.verticle}></div>             
           </Col>
-
 {/* signup form */}
 
           <Col xs={12} md={5}>
