@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import styles from './Modals.module.css'
 import { Button, Modal } from "react-bootstrap";
 import Link from "next/link";
-import LoginPage from "./utilities/LoginPage";
-import SignUpPage from './utilities/SignUpPage'
-
+import LoginPage from "./utilities/Login/LoginPage"
+import SignUpPage from './utilities/Signup/SignUpPage'
 const Header = () => {
   const [loginPage, setLoginPage] = useState(false);
   const [signupPage, setSignupPage] = useState(false);
@@ -42,13 +41,13 @@ const Header = () => {
       {loginPage ? (
         <div>
           <Modal show={show} onHide={handleClose} size="lg">
-            <LoginPage/>
+            <LoginPage signup={signupPageHandler}/>
           </Modal>
         </div>
       ) : signupPage ? (
         <div>
           <Modal show={show} onHide={handleClose} size="lg">
-            <SignUpPage/>
+            <SignUpPage login={loginPageHandler}/>
           </Modal>
 
         </div>
