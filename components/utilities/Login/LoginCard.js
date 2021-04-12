@@ -1,9 +1,9 @@
 import { Card,Row,Col } from 'react-bootstrap'
-import Facebook from '../../images/Facebook.svg'
-import Google from '../../images/Google.svg'
-import styles from '../Modals.module.css'
-import Dribble from '../../images/Dribble.svg'
-import Behance from '../../images/Behance.svg'
+import Facebook from '../../../images/Facebook.svg'
+import Google from '../../../images/Google.svg'
+import styles from '../../Modals.module.css'
+import Dribble from '../../../images/Dribble.svg'
+import Behance from '../../../images/Behance.svg'
 
  const LoginCard = () => {
   return (

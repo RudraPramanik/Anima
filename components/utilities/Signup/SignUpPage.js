@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import {Modal, Container, Row, Col, Button } from 'react-bootstrap'
-import styles from '../Modals.module.css'
-import Anima from '../../images/Anima.svg'
+import styles from '../../Modals.module.css'
+import Anima from '../../../images/Anima.svg'
 import SignupForm from './SignupForm'
-import LoginCard from './LoginCard'
+import LoginCard from '../Login/LoginCard'
 
 const SignUpPage = ({login}) => {
   return (

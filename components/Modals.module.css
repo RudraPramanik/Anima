@@ -3,21 +3,17 @@
   /* border-style: ridge; */
   border-color: #1781ff;
 }
-
-
-
 .anima {
-  font-family: Poppins;
   font-size: 42px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bolder;
+  font-family:'Poppins';
   line-height: 63px;
   letter-spacing: 0em;
   color: #1781ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 30px;
 }
 .anima_logo {
   position: absolute;
@@ -38,7 +34,11 @@
   justify-content: center;
   align-items: center;
 }
-
+.center img{
+  height:50%;
+  max-heigth:120px;
+  width:auto;
+}
 .google{
   position: absolute;
 width: 184px;
@@ -87,6 +87,8 @@ border-radius: 3px;
 
 .card_div{
   padding: 20px 10px;
+  height:80%;
+  width:80%;
 }
 
 .card_google{
@@ -149,14 +151,26 @@ border-radius: 3px;
 
 
 
-.card_logo_svg{
-  margin: 0 auto
-  /* height: 84px;
-width: 84px;
-left: 0px;
-top: 0px;
-border-radius: 50px; */
-}
 
+@media only screen and (min-width: 1000px) {
+  .modal_body{
+    height:90vh;
+  }
+  .card_logo_svg{
+    margin: 0 auto;
+    width:20%;
+    height:auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .modal_body{
+    width: 100%;
+  }
+  .card_logo_svg{
+    margin: 0 auto;
+    width:20%;
+    height:auto;
+  }
+}
 
 

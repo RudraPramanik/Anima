@@ -1,5 +1,5 @@
 import {Form, Button} from 'react-bootstrap'
-import styles from '../../components/Modals.module.css'
+import styles from '../../Modals.module.css'
 
 const LoginForm = () => {
     return (

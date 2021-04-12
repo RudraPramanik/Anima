@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import {Modal, Container, Row, Col, Button } from 'react-bootstrap'
-import styles from '../Modals.module.css'
-import Anima from '../../images/Anima.svg'
+import styles from '../../Modals.module.css'
+import Anima from '../../../images/Anima.svg'
 import LoginForm from './LoginForm'
 import LoginCard from './LoginCard'
 
 const LoginPage = ({signup}) => {
   return (
     <div className={styles.modal}>
-    <Modal.Body className="show-grid">
+    <Modal.Body className={styles.modal_body}>
     <Container>
     <div className="d-flex justify-content-center">
       <div className={styles.center}>
-                  <img src={Anima} alt="anima"/>
+            <img src={Anima} alt="anima"/>
           </div>
           <div className={styles.anima}>Anima</div>
 
